@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Screen reader navigation testing</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<h1>Screen reader testing page</h1>
+		<p>Last updated: <span>{{timestamp}}</span></p>
+	</header>	
+
+	<section aria-label="html nav tag">
+		<!-- just the HTML tag <nav> -->
+		<h2>NAV tag</h2>
+		<nav>
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</nav>
+
+		<h3>Results</h3>
+		<table>
+		</table>
+	</section>
+
+	<section aria-label="div with role">
+		<!-- a <div> with the only attribute aria role=”navigation” -->
+		<h2>DIV with navigation role</h2>
+		<div role="navigation">
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</div>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+	
+	<section aria-label="div with aria-label">
+		<!-- a <div> with the only attribute aria-label=”navigation” -->
+		<h2>DIV with aria-label</h2>
+		<div aria-label="navigation">
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</div>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+
+	<section aria-label="nav with role">
+		<!-- the HTML <nav> and an aria role=”navigation” -->
+		<h2>NAV with navigation role</h2>
+		<nav role="navigation">
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</nav>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+
+	<section aria-label="div with role and aria-label">
+		<!-- a <div> with the only attribute role=”navigation” and an aria-label=”primary” -->
+		<h2>DIV with navigation role and aria-label</h2>
+		<div role="navigation" aria-label="primary">
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</div>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+
+	<section aria-label="nav with aria-label">
+		<!-- the HTML <nav> and an aria-label =”primary navigation” -->
+		<h2>NAV with aria-label</h2>
+		<nav aria-label="primary navigation">
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</nav>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+
+	<section aria-label="nav with role and aria-label">
+		<!-- the HTML <nav>, role=”navigation,” and an aria-label =”primary” -->
+		<h2>NAV with navigation role and aria-label</h2>
+		<nav role="navigation" arial-label="primary">
+			<a href="javascript:void(0);">Nav link 1</a>
+			<a href="javascript:void(0);">Nav link 2</a>
+		</nav>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+
+	<section aria-label="footer containing nav with role">
+		<!-- <footer> containing a child <nav> with role="navigation" -->
+		<h2>FOOTER containing NAV with navigation role</h2>
+		<footer>
+			<nav role="navigation">
+				<a href="javascript:void(0);">Nav link 1</a>
+				<a href="javascript:void(0);">Nav link 2</a>
+			</nav>
+		</footer>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+
+	<section aria-label="footer containing nav with aria-label">
+		<!-- <footer> containing a <nav> with aria-label="primary" -->
+		<h2>FOOTER containing NAV with aria-label</h2>
+		<footer>
+			<nav aria-label="primary">
+				<a href="javascript:void(0);">Nav link 1</a>
+				<a href="javascript:void(0);">Nav link 2</a>
+			</nav>
+		</footer>
+
+		<h3>Results</h3>
+		<table></table>
+	</section>
+</body>
+</html>
