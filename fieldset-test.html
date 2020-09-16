@@ -9,47 +9,65 @@
 <body>
 	<h1>Fieldset required and invalid attributes</h1>
 
-	<fieldset aria-required="true">
-		<legend>Checkbox test with aria-required on the fieldset element</legend>
-		<label><input type="checkbox" name="fieldset1"> Checkbox 1</label>
-		<label><input type="checkbox" name="fieldset1"> Checkbox 2</label>
-		<label><input type="checkbox" name="fieldset1"> Checkbox 3</label>
-	</fieldset>
+	<form>
+		<fieldset aria-required="true">
+			<legend>Checkbox test with aria-required on the fieldset element</legend>
+			<label><input type="checkbox" name="fieldset1"> Checkbox 1</label>
+			<label><input type="checkbox" name="fieldset1"> Checkbox 2</label>
+			<label><input type="checkbox" name="fieldset1"> Checkbox 3</label>
+		</fieldset>
 
-	<fieldset aria-required="true">
-		<legend>Radio test with aria-required on the fieldset element</legend>
-		<label><input type="radio" name="fieldset2"> Radio 1</label>
-		<label><input type="radio" name="fieldset2"> Radio 2</label>
-		<label><input type="radio" name="fieldset2"> Radio 3</label>
-	</fieldset>
+		<fieldset aria-required="true">
+			<legend>Radio test with aria-required on the fieldset element</legend>
+			<label><input type="radio" name="fieldset2"> Radio 1</label>
+			<label><input type="radio" name="fieldset2"> Radio 2</label>
+			<label><input type="radio" name="fieldset2"> Radio 3</label>
+		</fieldset>
 
-	<fieldset>
-		<legend>Checkbox with aria-required on only one field, all fields have the same name attribute</legend>
-		<label><input type="checkbox" name="fieldset3" aria-required="true"> Checkbox 1</label>
-		<label><input type="checkbox" name="fieldset3"> Checkbox 2</label>
-		<label><input type="checkbox" name="fieldset3"> Checkbox 3</label>
-	</fieldset>
+		<fieldset>
+			<legend>Checkbox with aria-required on only one field, all fields have the same name attribute</legend>
+			<label><input type="checkbox" name="fieldset3" aria-required="true"> Checkbox 1</label>
+			<label><input type="checkbox" name="fieldset3"> Checkbox 2</label>
+			<label><input type="checkbox" name="fieldset3"> Checkbox 3</label>
+		</fieldset>
 
-	<fieldset>
-		<legend>Checkbox with aria-required on all fields, all fields have the same name attribute</legend>
-		<label><input type="checkbox" name="fieldset4" aria-required="true"> Checkbox 1</label>
-		<label><input type="checkbox" name="fieldset4" aria-required="true"> Checkbox 2</label>
-		<label><input type="checkbox" name="fieldset4" aria-required="true"> Checkbox 3</label>
-	</fieldset>
+		<fieldset>
+			<legend>Checkbox with aria-required on all fields, all fields have the same name attribute</legend>
+			<label><input type="checkbox" name="fieldset4" aria-required="true"> Checkbox 1</label>
+			<label><input type="checkbox" name="fieldset4" aria-required="true"> Checkbox 2</label>
+			<label><input type="checkbox" name="fieldset4" aria-required="true"> Checkbox 3</label>
+		</fieldset>
 
-	<fieldset>
-		<legend>Radio with aria-required on only one field, all fields have the same name attribute</legend>
-		<label><input type="radio" name="fieldset5" aria-required="true"> Radio 1</label>
-		<label><input type="radio" name="fieldset5"> Radio 2</label>
-		<label><input type="radio" name="fieldset5"> Radio 3</label>
-	</fieldset>
+		<fieldset>
+			<legend>Radio with aria-required on only one field, all fields have the same name attribute</legend>
+			<label><input type="radio" name="fieldset5" aria-required="true"> Radio 1</label>
+			<label><input type="radio" name="fieldset5"> Radio 2</label>
+			<label><input type="radio" name="fieldset5"> Radio 3</label>
+		</fieldset>
 
-	<fieldset>
-		<legend>Radio with aria-required on all fields, all fields have the same name attribute</legend>
-		<label><input type="radio" name="fieldset6" aria-required="true"> Radio 1</label>
-		<label><input type="radio" name="fieldset6" aria-required="true"> Radio 2</label>
-		<label><input type="radio" name="fieldset6" aria-required="true"> Radio 3</label>
-	</fieldset>
+		<fieldset>
+			<legend>Radio with aria-required on all fields, all fields have the same name attribute</legend>
+			<label><input type="radio" name="fieldset6" aria-required="true"> Radio 1</label>
+			<label><input type="radio" name="fieldset6" aria-required="true"> Radio 2</label>
+			<label><input type="radio" name="fieldset6" aria-required="true"> Radio 3</label>
+		</fieldset>
+
+		<fieldset aria-required="true" required>
+			<legend>Checkbox test with aria-required and required html attribute on the fieldset element</legend>
+			<label><input type="checkbox" name="fieldset7"> Checkbox 1</label>
+			<label><input type="checkbox" name="fieldset7"> Checkbox 2</label>
+			<label><input type="checkbox" name="fieldset7"> Checkbox 3</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Checkbox test with required html attribute on the each field element</legend>
+			<label><input type="checkbox" name="fieldset8" required> Checkbox 1</label>
+			<label><input type="checkbox" name="fieldset8" required> Checkbox 2</label>
+			<label><input type="checkbox" name="fieldset8" required> Checkbox 3</label>
+		</fieldset>
+
+		<input type="submit" value="submit">
+	</form>
 
 </body>
 </html>
