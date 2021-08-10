@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Aria Label override test site</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+		<nav>
+			<a href="http://localhost:8080/">Home</a>
+		</nav>
+		<a tabindex="1" href="#main">Skip</a></nav>
+	</div>
+	<div>
+	<ul>
+		<li aria-label="Banking and more things">
+			<a href="#">Banking</a>
+			<ul>
+				<li>Submenu 1</li>
+				<li>Submenu 2</li>
+				<li>Submenu 3</li>
+			</ul>
+		</li>
+		<img src=”#” role=”img” aria-hidden="true"/>
+	</ul>
+	<input type="text">
+	<iframe src="http://localhost:8080/" aria-hidden="true">
+	</iframe>
+	</div>
+</body>
+</html>

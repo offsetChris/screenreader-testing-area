@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Screen reader navigation testing</title>
+	<title>Fieldset testing/title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 	<h1>Fieldset required and invalid attributes</h1>
-
 	<form>
 		<fieldset aria-required="true">
 			<legend>Checkbox test with aria-required on the fieldset element</legend>
@@ -68,6 +67,33 @@
 
 		<input type="submit" value="submit">
 	</form>
+<script>
+	//https://raw.githubusercontent.com/nuclei/unfocus/master/dist/unfocus.js
+	(function(document, window){
+	if (!document || !window) {
+		return;
+	}
+	
+	var styleText = '::-moz-focus-inner{border:0 !important;}:focus{outline: none !important;';
+	var unfocus_style = document.createElement('STYLE');
 
+	window.unfocus = function(){
+		document.getElementsByTagName('HEAD')[0].appendChild(unfocus_style);
+
+		document.addEventListener('mousedown', function(){
+			unfocus_style.innerHTML = styleText+'}';
+		});
+		document.addEventListener('keydown', function(){
+			unfocus_style.innerHTML = '';
+		});
+	};
+
+	unfocus.style = function(style){
+		styleText += style;
+	};
+
+	unfocus();
+})(document, window);
+</script>
 </body>
 </html>
